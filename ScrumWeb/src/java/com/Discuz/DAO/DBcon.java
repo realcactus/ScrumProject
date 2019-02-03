@@ -23,8 +23,9 @@ public class DBcon {
        
          try {
              Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-             conn = DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:54192;databaseName=db_Discuz","sa","123456");
+//             conn = DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:54192;databaseName=db_Discuz","sa","123456");
 //             conn=java.sql.DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:54192;databaseName=db_Discuz","sa","123456");
+             conn = DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:49392;databaseName=db_Discuz","sa","Liyue321");
          } catch (SQLException ex) {
              Logger.getLogger(DBcon.class.getName()).log(Level.SEVERE, null, ex);
          } catch (ClassNotFoundException e) {
